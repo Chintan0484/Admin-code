@@ -279,16 +279,50 @@ a {
             background: linear-gradient(#642bff,#ff22e6);
         }
 
+        .btn1 {
+            
+    margin-top: 340px;
+    bottom: 10%; /* Adjust the distance from the bottom as needed */
+    left: 50%; /* Move the button to the horizontal center */
+    background-color: crimson;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 5px 2px;
+    max-height: 30px;
+    box-sizing: unset;
+}
+
+.btn2 {
+            margin-left: 10px; /* Add margin between buttons */
+            margin-top:340px;
+            bottom: 10%; /* Adjust the distance from the bottom as needed */
+            text-align: center;
+            background-color: crimson;
+            border-radius: 0.5rem;
+            padding: 5px 2px;
+            box-sizing: unset;
+            max-height: 30px;
+        }
+
+.background {
+            background-image: url("background_services.png");
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            background-position:0%;
+            background-size: cover; /* Cover the entire background */
+            height:100vh;
+            margin-top:-70px;
+
+}
     </style>
 </head>
-<body background="background_services.png">
+<body class="background">
     <h1>Services</h1>
     <nav>
         <img src="logo.png" alt="Logo" class="logo" onclick="window.location.href='index.html'" />
         <ul>
             <li><a href="/home/Home.html" class="active">Home</a></li>
             <li><a href="/services/services.html">Services</a></li>
-            <li><a href="parts.html">Parts</a></li>
+            <li><a href="/parts/parts.html">Parts</a></li>
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Customers</a></li>
             <li><a href="/sign/signin.html">Sign In</a></li>
@@ -297,10 +331,12 @@ a {
         </ul>
     </nav>
     <a href="#">
-        <div id="rectangle1">
+        <div class="rectangle" id="rectangle1">
             <img src="modification.png" alt="Car Modification">
             <p style="font-size: 160%; text-align: center;">Car Modification</p><br>
             <p>"Alteration of vehicle's appearance or performance for customization and enhancement."</p>
+            <a href="#" class="btn1">Add Parts</a>
+            <a href="#" class="btn2">Delete Parts</a>
         </div>
     </a>
 
@@ -309,6 +345,8 @@ a {
             <img src="customization.png" alt="Car Customization">
             <p style="font-size: 160%; text-align: center;">Car Customization</p><br>
             <p>“Tailoring car features to personal preferences for unique individuality and performance.”</p>
+            <a href="#" class="btn1">Add Parts</a>
+            <a href="#" class="btn2">Delete Parts</a>
         </div>
     </a>
 
@@ -317,6 +355,8 @@ a {
             <img src="services.png" alt="General Services">
             <p style="font-size: 160%; text-align: center;">General Services</p><br>
             <p>“Routine maintenance and repairs to ensure optimal car performance and longevity”</p>
+            <a href="#" class="btn1">Add Parts</a>
+            <a href="#" class="btn2">Delete Parts</a>
         </div>
     </a>
 
@@ -325,6 +365,8 @@ a {
             <img src="accessories.png" alt="Accessories">
             <p style="font-size: 160%; text-align: center;">Accessories</p><br>
             <p>“Supplementary enhancements and features, enhancing functionality, aesthetics, and overall performance for automotive excellence."</p>
+            <a href="#" class="btn1">Add Parts</a>
+            <a href="#" class="btn2">Delete Parts</a>
         </div>
     </a>
 </body>
